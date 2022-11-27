@@ -1,5 +1,6 @@
-import makeElement from "./makeElement";
-import NavBar from "./NavBar";
-const mainContainer = document.getElementById('content');
+import renderPage from './Pages';
 
-makeElement(NavBar(mainContainer));
+renderPage(() => ({
+    type: 'h1', 
+    text: 'fuck'
+}))

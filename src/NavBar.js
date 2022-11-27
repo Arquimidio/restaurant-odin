@@ -25,12 +25,8 @@ function Nav() {
     }
 }
 
-function NavBar(parent) {
-    return {
-        type: 'header',
-        parent,
-        children: [Nav()]
-    }
-}
-
-export default NavBar;
+export default (parent) => ({
+    type: 'header',
+    parent,
+    children: [Nav()]
+})
