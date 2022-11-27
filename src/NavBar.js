@@ -1,13 +1,10 @@
 function NavLinks(...args) {
     return args.map((text) => ({
         type: 'li',
-        children: [{
-            type: 'a',
-            text,
-            attr: {
-                href: '/'
-            }
-        }]
+        text,
+        attr: {
+            class: 'nav-link'
+        }
     }))
 }
 

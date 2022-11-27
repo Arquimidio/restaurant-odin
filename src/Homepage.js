@@ -1,8 +1,6 @@
-import food from './food.jpg';
-import './css/main.css';
+import food from './images/food.jpg';
 
 function Hero(){
-
     return {
         type: 'div',
         children: [
