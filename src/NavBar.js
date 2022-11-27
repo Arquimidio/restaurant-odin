@@ -1,3 +1,4 @@
+
 function NavLinks(...args) {
     return args.map((text) => ({
         type: 'li',
@@ -18,6 +19,9 @@ function NavList() {
 function Nav() {
     return {
         type: 'nav',
+        attr: {
+            class: 'container'
+        },
         children: [NavList()]
     }
 }

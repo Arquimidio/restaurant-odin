@@ -1,4 +1,6 @@
 import food from './images/food.jpg';
+import Container from './Container'
+import PageWrapper from './PageWrapper';
 
 function Hero(){
     return {
@@ -10,8 +12,6 @@ function Hero(){
     }
 }
 
-export default (parent) => ({
-    parent,
-    type: 'section',
+export default PageWrapper({
     children: [Hero()]
-}) 
+})
