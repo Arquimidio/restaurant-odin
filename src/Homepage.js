@@ -1,4 +1,5 @@
 import food from './food.jpg';
+import './css/main.css';
 
 function Hero(){
 
