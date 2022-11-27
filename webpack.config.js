@@ -20,5 +20,13 @@ module.exports = {
      title: "VegTopia",
      inject: "body"
    })
- ]
+ ],
+ module: {
+  rules: [
+    {
+      test: /\.(jpg|jpeg|png|svg|gif)/i,
+      type: 'asset/resource'
+    }
+  ]
+ }
 }

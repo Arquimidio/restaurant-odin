@@ -1,6 +1,4 @@
 import renderPage from './Pages';
+import Homepage from './Homepage';
 
-renderPage(() => ({
-    type: 'h1', 
-    text: 'fuck'
-}))
+renderPage(Homepage);
