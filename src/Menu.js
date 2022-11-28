@@ -1,4 +1,4 @@
-import PageWrapper from './PageWrapper';
+import PageWrapper from './helper-components/PageWrapper';
 
 export default PageWrapper({
     children: [{
