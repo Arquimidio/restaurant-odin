@@ -7,6 +7,7 @@ function FooterContent(...args) {
         children: args
     }
 }
+
 export default (parent) => ({
     type: 'footer',
     parent,

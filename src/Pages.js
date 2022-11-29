@@ -1,6 +1,6 @@
-import NavBar from "./NavBar";
-import Base from "./Base";
-import Footer from "./Footer";
+import NavBar from "./helper-components/NavBar";
+import Base from "./helper-components/Base";
+import Footer from "./helper-components/Footer";
 import makeElement from "./makeElement";
 
 function cleanPage(pageContainer) {
