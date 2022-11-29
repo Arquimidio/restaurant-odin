@@ -7,14 +7,20 @@ import Burguer from './images/burger.png'
 import Soup from './images/soup.png'
 import Pasta from './images/pasta.png'
 import HotDog from './images/hotdog.png'
+import Beef from './images/beef.png'
+import Pierogi from './images/pierogi.png'
 
 export default PageWrapper({
     children: [MenuGrid(
         MenuItem('Salad Mix', Salad, '$12'),
         MenuItem('Rice N\' Beans', Beans, '$18'),
-        MenuItem('Soy Burguer', Burguer, '$22'),
-        MenuItem('Carrot Soup', Soup, '$16'),
+        MenuItem('Pierogi', Pierogi, '$30'),
         MenuItem('La Pasta', Pasta, '$14'),
-        MenuItem('Hot Dog', HotDog, '$20')
+        MenuItem('Soy Beef', Beef, '$28'),
+        MenuItem('Carrot Soup', Soup, '$16'),
+        MenuItem('Soy Burguer', Burguer, '$22'),
+        MenuItem('Hot Dog', HotDog, '$20'),
+        
+        
     )]
 })

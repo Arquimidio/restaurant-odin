@@ -26,6 +26,7 @@
 
     --base-padding: var(--medium-size) 0;
     --section-padding: var(--x-big-size) 0;
+    --btn-padding: var(--base-size) var(--big-size);
 }
 
 body {
@@ -62,7 +63,7 @@ footer
 
 section {
     padding: var(--section-padding);
-    background-color: var(--grey-color);
+    background-color: var(--main-complementary);
 }
 
 #content-container {
@@ -75,6 +76,12 @@ section {
     max-width: var(--container-max-width);
     width: 95%;
     margin: 0 auto;
+}
+
+.btn {
+    padding: var(--btn-padding);
+    border-radius: var(--medium-size);
+    background-color: var(--main-analogous);
 }
 
 .nav-link {
@@ -95,6 +102,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--medium-size);
+}
+
+.hero-btns {
+    display: flex;
+    gap: var(--base-size);
 }
 
 .menu-grid {

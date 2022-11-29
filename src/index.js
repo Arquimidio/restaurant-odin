@@ -6,11 +6,13 @@ import Contact from './Contact';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const allPAges = [Homepage, Menu, Contact]
     renderBase();
+    const allPAges = [Homepage, Menu, Contact];
     const links = document.querySelectorAll('.nav-link');
+
     links.forEach((link, i) => link.addEventListener('click', () => {
         renderPage(allPAges[i])
     }))
+    
     renderPage(Homepage);
 })

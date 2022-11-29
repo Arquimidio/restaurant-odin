@@ -1,7 +1,7 @@
 import Container from "./Container";
 
 function hasContainer(element) {
-    return element.children[0].attr.class === 'container';
+    return element.attr?.class === 'container';
 }
 
 export default (obj) => {
@@ -17,7 +17,7 @@ export default (obj) => {
             }
         }
 
-        if(!hasContainer(obj)) {
+        if(!hasContainer(obj.children[0])) {
             obj.children = [Container(...obj.children)]
         }
 
