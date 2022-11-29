@@ -25,7 +25,7 @@ function Nav() {
         attr: {
             class: 'container'
         },
-        children: [Image(Logo), NavList(), Button('Call Us', 'btn-primary')]
+        children: [Image(Logo, 'logo'), NavList(), Button('Call Us!', 'btn-primary')]
     }
 }
 

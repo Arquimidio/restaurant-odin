@@ -18,7 +18,7 @@
     --black: rgb(62, 62, 62);
     --light-font: rgb(119, 119, 119);
 
-    --container-max-width: 1100px;
+    --container-max-width: 1300px;
 
     --half-base-size: 0.5rem;
     --base-size: 1rem;
@@ -32,7 +32,7 @@
     --base-padding: var(--small-size) 0;
     --section-padding: var(--x-big-size) 0;
     --btn-padding: var(--base-size) var(--medium-size);
-    --small-padding: 0.2em 1em;
+    --small-padding: 0.3em 1em;
 }
 
 body {
@@ -94,6 +94,16 @@ section {
     margin: 0 auto;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-size);
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
 .btn {
     padding: var(--btn-padding);
     border-radius: var(--medium-size);
@@ -120,7 +130,7 @@ section {
     cursor: pointer;
     transition: background-color 250ms;
     border-radius: var(--small-size);
-    padding: var(--half-base-size);
+    padding: var(--small-padding);
 }
 
 .nav-link.selected {

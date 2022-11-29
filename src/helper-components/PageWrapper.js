@@ -10,7 +10,7 @@ export default (obj) => {
         obj.type = 'section';
         
         if('attr' in obj) {
-            obj.attr.class = 'page-content'
+            obj.attr.class += ' page-content'
         } else {
             obj.attr = {
                 class: 'page-content'
