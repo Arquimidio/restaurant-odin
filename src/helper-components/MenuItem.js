@@ -1,5 +1,14 @@
 import Wrapper from "./Wrapper";
 
+function ItemSpan(text, className) {
+    return {
+        text,
+        attr: {
+            class: className
+        }
+    }
+}
+
 export default (name, image, price, promo) => ({
     type: 'div',
     attr: {
@@ -12,26 +21,8 @@ export default (name, image, price, promo) => ({
                 src: image
             }
         }),
-        {
-            type: 'span',
-            text: name,
-            attr: {
-                class: 'menu-item-name'
-            }
-        },
-        {
-            type: 'span',
-            text: price,
-            attr: {
-                class: 'menu-item-price'
-            }
-        },
-        {
-            type: 'span',
-            text: promo,
-            attr: {
-                class: 'menu-item-promo'
-            }
-        }
+        ItemSpan(name, 'menu-item-name'),
+        ItemSpan(price, 'menu-item-price'),
+        ItemSpan(promo, 'menu-item-promo')
     ]
 })

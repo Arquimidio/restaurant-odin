@@ -20,7 +20,5 @@ export default PageWrapper({
         MenuItem('Carrot Soup', Soup, '$16'),
         MenuItem('Soy Burguer', Burguer, '$22'),
         MenuItem('Hot Dog', HotDog, '$20'),
-        
-        
     )]
 })
