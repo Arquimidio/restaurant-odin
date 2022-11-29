@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach((link, i) => link.addEventListener('click', () => {
         renderPage(allPAges[i])
+        document.querySelector('.selected')?.classList.remove('selected');
+        link.classList.add('selected')
     }))
     
     renderPage(Homepage);
+    links[0].classList.add('selected');
 })

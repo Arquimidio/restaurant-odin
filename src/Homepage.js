@@ -8,7 +8,15 @@ const HeroTitle = () => ({ type: 'h1', text: 'Well prepared, tasteful vegetarian
 const HeroParagraph = () => ({ text: 'You don\'t need to eat tasteless food, this world can be very colorful and tasteful. Vegetarian food like you will never see anywhere else!' });
 const HeroText = () => ({ 
     type: 'div', 
-    children: [HeroTitle(), HeroParagraph(), Wrapper('hero-btns', Button('Contact us'), Button('Know more'))], 
+    children: [
+        HeroTitle(), 
+        HeroParagraph(), 
+        Wrapper(
+            'hero-btns', 
+            Button('Contact us', 'btn-primary'), 
+            Button('Know more', 'btn-secundary')
+        )
+    ], 
     attr: { class: 'hero-text' } 
 })
 const HeroImage = () => ({ type: 'div', children: [{ type: 'img', attr: { src: food }}]});

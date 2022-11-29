@@ -11,5 +11,5 @@ function FooterContent(...args) {
 export default (parent) => ({
     type: 'footer',
     parent,
-    children: [FooterContent({ type: 'div', text: 'Sou um rodapé :O'})]
+    children: [FooterContent({ type: 'div', text: '@Copyright Vegtopia 2022'})]
 })
