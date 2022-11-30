@@ -5,7 +5,7 @@ import Button from './helper-components/Button';
 import Wrapper from './helper-components/Wrapper';
 
 const HeroTitle = () => ({ type: 'h1', text: 'Well prepared, tasteful vegetarian and vegan food with everything you could wish!'});
-const HeroParagraph = () => ({ text: 'You don\'t need to eat tasteless food, this world can be very colorful and tasteful. Vegetarian food like you will never see anywhere else!' });
+const HeroParagraph = () => ({ text: 'You don\'t have to eat tasteless food, this world can be very colorful and tasteful. Vegetarian food like you will never see anywhere else!' });
 const HeroText = () => ({ 
     type: 'div', 
     children: [

@@ -2,22 +2,24 @@ import PageWrapper from "./helper-components/PageWrapper";
 import Wrapper from "./helper-components/Wrapper";
 import Input from "./helper-components/Input";
 import Button from "./helper-components/Button";
+import Map from "./helper-components/Map";
 
 function ContactText() {
     return  Wrapper(
-        'col',
+        'contact-text col',
         {
             type: 'h1',
             text: 'Contact us'
         },
         {
-            type: 'p',
             text: 'Tel: (41) 9999-9999'
         },
         {
-            type: 'p',
             text: 'Mail: contact@vegtopia.com'
         },
+        {
+            text: 'Address: 833 Lexington Ave, New York, NY 10065, Estados Unidos'
+        }
     )
 }
 
@@ -25,7 +27,7 @@ function ContactForm() {
     return {
         type: 'form',
         attr: {
-            class: 'contact-form col'
+            class: 'contact-form '
         },
         children: [
             Input('John Snow', 'Name'),
@@ -41,7 +43,8 @@ export default PageWrapper({
         Wrapper(
             'contact',
             ContactText(),
-            ContactForm()
+            ContactForm(),
+            Map()
         )
         
     ]

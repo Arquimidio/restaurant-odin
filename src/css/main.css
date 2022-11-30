@@ -9,7 +9,7 @@
 
     --main-color: rgb(173, 255, 173);
     --main-analogous: rgb(221, 254, 221);
-    --main-complementary: #C6392A;
+    --tri-complementary: #e9c885;
     --darker-green: rgb(126, 206, 126);
     --main-tri: #b299ff;
     --analogous-tri: #9c81eb;
@@ -33,6 +33,8 @@
     --section-padding: var(--x-big-size) 0;
     --btn-padding: var(--base-size) var(--medium-size);
     --small-padding: 0.3em 1em;
+    --vertical-padding: var(--half-base-size) var(--half-base-size);
+    --square-padding: var(--medium-size);
 }
 
 body {
@@ -94,6 +96,11 @@ section {
     margin: 0 auto;
 }
 
+.icon {
+    width: var(--base-size);
+    height: var(--base-size);
+}
+
 .col {
     display: flex;
     flex-direction: column;
@@ -105,6 +112,9 @@ section {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    gap: var(--half-base-size);
     padding: var(--btn-padding);
     border-radius: var(--medium-size);
     border: none;;
@@ -204,6 +214,7 @@ section {
 
 footer {
     flex-grow: 1;
-    background-color: var(--main-tri);
+    background-color: var(--tri-complementary);
     text-align: center;
+    font-weight: bold;
 }

@@ -17,7 +17,7 @@ export default (placeholder = 'Write something here!', label = null,  inputType 
         attr: {
             id: label,
             placeholder,
-            name: label,
+            name: label.toLowerCase(),
             type: inputType
         }
     }
