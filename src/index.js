@@ -1,6 +1,6 @@
 import './css/main.css';
 import './css/form.css';
-import { renderBase, renderPage, showPage} from './Pages';
+import { renderBase, renderPage } from './Pages';
 import Homepage from './Homepage';
 import Menu from './Menu';
 import Contact from './Contact';
